@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= listTitle %></title>
+    </head>
+    <body>
+        <h1>My Name: <%= name %></h1>
+        <h1><%= listTitle %></h1>
+
+        <ul>
+            <% definitions.forEach(function(item) { %>
+                <li>
+                    <%= item.title %> : <%= item.description %>
+                </li>
+            <% }); %>
+        </ul>
+    </body>
+</html>
